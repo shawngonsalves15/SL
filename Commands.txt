@@ -1,0 +1,29 @@
+________________Passive Reconnaissance:_________________
+whois www.google.com
+dig www.google.com
+traceroute example.com
+nslookup example.com
+ _______________Nmap and Zenmap___________________
+Ping Scan:
+nmap -sn scanme.nmap.org
+Quick Scan:
+nmap -T4 -F scanme.nmap.org
+Intense Scan:
+nmap -T4 -A -v scanme.nmap.org
+____________DDoS Attack_________________
+hping3 -h
+sudo hping3 170.178.183.18
+sudo hping3 170.178.183.18 -1
+sudo hping3 170.178.183.18 -1 --fast
+sudo hping3 170.178.183.18 -1 --faster
+sudo hping3 -c 10000 -d 120 -S -w 64 -p 21 --flood --rand-source 170.178.183.18 
+_____________SNORT_________________
+snort -v
+snort -vd
+snort -W
+snort -dev -1 C:\Snort\log
+snort -dev -1 C:\Snort\log -h 192.168.1.0/24 -c snort.conf
+
+
+
+
